@@ -1,0 +1,29 @@
+body {
+    margin: 100px;
+}
+
+.box {
+    background-color: grey;
+    color: white;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.box-container {
+width: 700px;
+display: grid;
+grid-template-columns: repeat(6 100px);
+grid-gap: 10px;
+}
+
+.box:nth-child(even) {
+    background-color: rgb(203, 196, 196);
+    color: black;
+}
+
+.cell {
+    grid-column: 3 / 8;
+    grid-row: 2 / 3;
+    border: 2px solid red;
+}
